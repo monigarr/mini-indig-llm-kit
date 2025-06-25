@@ -1,0 +1,39 @@
+# kanienkeha_vocab_rules.yaml
+# configurable for Kanien’kéha specific morphological cues: prefixes, suffixes and roots.
+language: Kanien'kéha
+type: polysynthetic
+description: >
+  Common prefixes, suffixes, and root fragments for parsing Kanien'kéha tokens into morphemes.
+
+prefixes:
+  - "ka"
+  - "ra"
+  - "iako"
+  - "tsi"
+  - "io"
+  - "te"
+
+suffixes:
+  - "ron"
+  - "kha"
+  - "ne"
+  - "tshera"
+  - "shon"
+  - "kwa"
+
+infix_patterns:
+  - "n[iie]n"
+  - "akw"
+  - "on[iy]"
+
+root_markers:
+  - "non"
+  - "we"
+  - "ka"
+  - "io"
+  - "tsi"
+
+notes:
+  - Prefixes often indicate person, object, or mode (e.g., "ra" for male agent)
+  - Suffixes may show tense, location, or plurality
+  - Roots can shift based on nasalization or vowel harmony
