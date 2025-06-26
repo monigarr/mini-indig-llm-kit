@@ -1,0 +1,212 @@
+language: Kanien'kéha
+type: polysynthetic
+dialects:
+  eastern:
+    location: Akwesasne
+    prefixes: ["iako", "ka", "tsi", "ion", "io"]
+    suffixes: ["ne", "tshera", "kha"]
+    root_markers: ["non", "we", "io", "tsi"]
+  central:
+    location: Kahnawake
+    prefixes: ["wa", "ra", "ia", "ia't", "kai"]
+    suffixes: ["ron", "kwen", "ta", "rak"]
+    root_markers: ["non", "wak", "io", "ka"]
+  western:
+    location: Tyendinaga, Six Nations
+    prefixes: ["tha", "te", "sha", "ki", "ri"]
+    suffixes: ["kwa", "htho", "rake"]
+    root_markers: ["we", "tsia", "ra", "ion"]
+  non_standardized_english_speaker_friendly:
+    notes: > 
+      Designed to assist learners with phonetic breakdown of Kanien’kéha using English speaker patterns.
+    prefixes: ["I", "me", "you", "they", "them", "he", "she", "it", "we", "us"]
+    suffixes: ["s", "ing", "ed", "tion"]
+    root_markers: ["like", "speak", "want", "cold"]
+
+language: Kanien’kéha
+type: polysynthetic
+description: >
+  Pronoun prefix system across multiple dialects of Kanien’kéha (Mohawk Language),
+  including Blue (something is happenign to someone), Red (someone is doing something), and Purple (person to person) verb categories, used to conjugate according to
+  pronoun class, number, and stem type.
+
+dialects:
+  western:
+    location: Tyendinaga, Six Nations
+    verb_prefixes:
+      blue_category:
+        C_STEM:
+          I: "wake"
+          you: "sa"
+          he: "ro"
+          she: "yako"
+          it: "yo"
+          you_and_I: "yonkeni"
+          someone_and_I: "yonkeni"
+          you_two: "seni"
+          two_males: "roti"
+          two_females: "yoti"
+          you_all_and_I: "yonkwa"
+          they_and_I: "yonkwa"
+          all_of_you: "sewa"
+          they_m: "roti"
+          they_mf: "yoti"
+        A_STEM: {}  # repeat same structure
+        I_STEM: {}
+        E_STEM: {}
+        O_STEM: {}
+      red_category:
+        C_STEM:
+          I: "TODO:"
+          you: "TODO:"
+          he: "TODO:"
+          she: "TODO:"
+          it: "TODO:"
+          you_and_I: "TODO:"
+          someone_and_I: "TODO:"
+          you_two: "TODO:"
+          two_males: "TODO:"
+          two_females: "TODO:"
+          you_all_and_I: "TODO:"
+          they_and_I: "TODO:"
+          all_of_you: "TODO:"
+          they_m: "TODO:"
+          they_mf: "TODO:"
+        A_STEM: {}
+        I_STEM: {}
+        EN_STEM: {}
+        ON_STEM: {}
+      purple_category:
+        C_STEM:
+          I: "wake"
+          you: "sa"
+          he: "ro"
+          she: "yako"
+          it: "yo"
+          you_and_I: "yonkeni"
+          someone_and_I: "yonkeni"
+          you_two: "seni"
+          two_males: "roti"
+          two_females: "yoti"
+          you_all_and_I: "yonkwa"
+          they_and_I: "yonkwa"
+          all_of_you: "sewa"
+          they_m: "roti"
+          they_mf: "yoti"
+        A_STEM: {}
+        I_STEM: {}
+        EN_STEM: {}
+        ON_STEM: {}
+
+  central:
+    location: Kahnawake
+    verb_prefixes:
+      blue_category:
+        C_STEM:
+          I: "wake"
+          you: "sa"
+          he: "ro"
+          she: "iako"
+          it: "io"
+          you_and_I: "ionkeni"
+          someone_and_I: "ionkeni"
+          you_two: "seni"
+          two_males: "roti"
+          two_females: "yoti"
+          you_all_and_I: "ionkwa"
+          they_and_I: "ionkwa"
+          all_of_you: "sewa"
+          they_m: "roti"
+          they_mf: "ioti"
+        A_STEM: {}
+        I_STEM: {}
+        E_STEM: {}
+        O_STEM: {}
+      red_category:
+        C_STEM: {}
+        A_STEM: {}
+        I_STEM: {}
+        EN_STEM: {}
+        ON_STEM: {}
+      purple_category:
+        C_STEM: {}
+        A_STEM: {}
+        I_STEM: {}
+        EN_STEM: {}
+        ON_STEM: {}
+
+  eastern:
+    location: Akwesasne
+    verb_prefixes:
+      blue_category:
+        C_STEM:
+          I: "wake"
+          you: "sa"
+          he: "ro"
+          she: "iako"
+          it: "io"
+          you_and_I: "ionkeni"
+          someone_and_I: "ionkeni"
+          you_two: "seni"
+          two_males: "roti"
+          two_females: "yoti"
+          you_all_and_I: "ionkwa"
+          they_and_I: "ionkwa"
+          all_of_you: "sewa"
+          they_m: "roti"
+          they_mf: "ioti"
+        A_STEM: {}
+        I_STEM: {}
+        E_STEM: {}
+        O_STEM: {}
+      red_category:
+        C_STEM: {}
+        A_STEM: {}
+        I_STEM: {}
+        EN_STEM: {}
+        ON_STEM: {}
+      purple_category:
+        C_STEM: {}
+        A_STEM: {}
+        I_STEM: {}
+        EN_STEM: {}
+        ON_STEM: {}
+
+  english_phonetics:
+    notes: >
+      Used to support phonetic learning for English speakers without full
+      orthographic fluency. These are approximate placeholders for learning systems.
+    verb_prefixes:
+      blue_category:
+        C_STEM:
+          I: "wahgeh"
+          you: "sa"
+          he: "lo"
+          she: "yahgo"
+          it: "yo"
+          you_and_I: "yewngehni"
+          someone_and_I: "yewngehni"
+          you_two: "sehknee"
+          two_males: "lowtee"
+          two_females: "yotee"
+          you_all_and_I: "yewngwah"
+          they_and_I: "yewngwah"
+          all_of_you: "sehwah"
+          they_m: "lotee"
+          they_mf: "yotee"
+        A_STEM: {}
+        I_STEM: {}
+        E_STEM: {}
+        O_STEM: {}
+      red_category:
+        C_STEM: {}
+        A_STEM: {}
+        I_STEM: {}
+        EN_STEM: {}
+        ON_STEM: {}
+      purple_category:
+        C_STEM: {}
+        A_STEM: {}
+        I_STEM: {}
+        EN_STEM: {}
+        ON_STEM: {}

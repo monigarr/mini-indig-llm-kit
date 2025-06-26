@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Indigenous Language Dataset Metadata Schema",
+  "description": "Metadata format for low-resource, polysynthetic Indigenous language datasets.",
+  "type": "object",
+  "required": ["language", "dialect", "version", "source", "contributors", "license", "formats", "features", "ethical_guidelines"],
+  "properties": {
+    "language": {
+      "type": "string",
+      "description": "Full name of the Indigenous language (e.g., Kanien’kéha)"
+    },
+    "dialect": {
+      "type": "string",
+      "description": "Dialect or community variant (e.g., Eastern, Western, Central, etc.)"
+    },
+    "version": {
+      "type": "string",
+      "description": "Dataset version string (e.g., '1.0', '2025.06')"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of the dataset content and its purpose"
+    },
+    "source": {
+      "type": "string",
+      "description": "Origin or source of the dataset (e.g., speaker interviews, educational corpora, etc.)"
+    },
+    "license": {
+      "type": "string",
+      "enum": ["CC-BY-4.0", "CC0", "MIT", "Apache-2.0", "custom-community-license"],
+      "description": "License governing dataset usage"
+    },
+    "formats": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["text", "audio", "video", "image", "transcription", "translation", "annotation"]
+      }
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["morpheme-level", "pronoun-prefixes", "stem-mapping", "audio-aligned", "tokenized", "whisper-transcribed"]
+      }
+    },
+    "ethical_guidelines": {
+      "type": "object",
+      "required": ["community_involvement", "data_sovereignty", "cultural_safety"],
+      "properties": {
+        "community_involvement": {
+          "type": "string",
+          "description": "Description of how community members were involved in creation and approval"
+        },
+        "data_sovereignty": {
+          "type": "string",
+          "description": "Statement on ownership and storage of language data"
+        },
+        "cultural_safety": {
+          "type": "string",
+          "description": "Guidelines for culturally appropriate handling, access, and re-use"
+        }
+      }
+    },
+    "contributors": {

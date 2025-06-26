@@ -1,0 +1,37 @@
+[
+  {
+    "id": "trans_001",
+    "source_language": "en",
+    "target_language": "mohawk",
+    "input": "Thank you, my friend.",
+    "output": "Niawen’kó:wa, ken’nikén:’a."
+  },
+  {
+    "id": "trans_002",
+    "source_language": "mohawk",
+    "target_language": "en",
+    "input": "Wa’kè:ron ne karíhwanoron.",
+    "output": "I made the story."
+  },
+  {
+    "id": "trans_003",
+    "source_language": "en",
+    "target_language": "mohawk",
+    "input": "Where are you going?",
+    "output": "Tánon’ ne tsi ni’kèn:’en?"
+  },
+  {
+    "id": "trans_004",
+    "source_language": "mohawk",
+    "target_language": "en",
+    "input": "Sewakwé:kon.",
+    "output": "All of us."
+  },
+  {
+    "id": "trans_005",
+    "source_language": "en",
+    "target_language": "mohawk",
+    "input": "The children are learning.",
+    "output": "Ronwatién:tas ne akwé:kon raksótha."
+  }
+]

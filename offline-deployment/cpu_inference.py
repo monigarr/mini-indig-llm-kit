@@ -1,12 +1,29 @@
-"""
-cpu_inference.py
-
-Run a fine-tuned QLoRA LLaMA 3 model on a low-resource, offline CPU machine.
-Ensure you have manually downloaded and placed the model in /models/llama3-8b-qlora-output
-
-usage: python offline-deployment/cpu_inference.py
-
-"""
+# ============================================================================
+#
+# cpu_inference.py
+#
+# Run a fine-tuned QLoRA LLaMA 3 model on a low-resource, offline CPU machine.
+# Ensure you have manually downloaded and placed the model in /models/llama3-8b-qlora-output
+# usage: python offline-deployment/cpu_inference.py
+# 
+# Author: 
+#   MoniGarr (Monica Peters), monigarr@MoniGarr.com
+#
+# This repository supports language revival & retention for
+#     Polysynthetic, Low-Resource Indigenous Languages that
+#       might lack industry standard language ISO codes.
+#
+# License: Apache 2.0
+# 
+# For technical consulting, collaboration, or mentorship on Indigenous
+# Language Revival & Retention Tech Solutions (AI, XR, 3D, Cultural Protocols)
+# contact:
+#   MoniGarr (Monica Peters) – monigarr@monigarr.com
+#   Founder of MoniGarr.com LLC and MohawkLanguage.ca
+#   Akwesasne-based Onkwehonwe (Indigenous, Kanien’kéhake, Mohawk of Akwesasne)
+#   https://www.linkedin.com/in/3dtechartist
+#
+# ============================================================================
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline

@@ -1,0 +1,37 @@
+{
+  "tokenizer_class": "PreTrainedTokenizerFast",
+  "name_or_path": "tokenizer/custom_tokenizer.json",
+  "model_max_length": 256,
+  "padding_side": "right",
+  "truncation_side": "right",
+  "do_lower_case": true,
+  "clean_text": true,
+  "strip_accents": false,
+  "special_tokens_map": {
+    "unk_token": "<unk>",
+    "pad_token": "<pad>",
+    "bos_token": "<s>",
+    "eos_token": "</s>"
+  },
+  "additional_special_tokens": [
+    "<s>",
+    "</s>",
+    "<unk>",
+    "<pad>",
+    "<mask>",
+    "<speaker_A>",
+    "<speaker_B>",
+    "<dialect_Eastern>",
+    "<dialect_Central>",
+    "<dialect_Western>",
+    "<dialect_EnglishPhonetic>"
+  ],
+  "suffix_indicator": "’",
+  "prefix_indicator": "-",
+  "tokenizer_file": "custom_tokenizer.json",
+  "language": "kanienkeha",
+  "metadata": {
+    "dialect_support": ["Eastern", "Central", "Western", "EnglishPhonetic"],
+    "stem_types": ["C-STEM", "A-STEM", "I-STEM", "O-STEM", "E-STEM", "EN-STEM"],
+    "morpheme_strategy": "rule-based + BPE fallback",
+    "

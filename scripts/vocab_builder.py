@@ -1,34 +1,51 @@
-"""
-vocab_builder.py
-
-* Load a text corpus (sample_corups.txt)
-* tokenize it using whiespace or custom tokenizer
-* count and visualize: 
-** word / token frequency
-** character n-grams (roots, affixes, suffixes)
-** estimated morphemes using simple rules
-* Save Output to:
-** .csv files for further analysis
-** .png plots for fast visualization
-
-Analyze a polysynthetic language corpus to extract and visualize:
-- Token frequencies
-- Character n-grams
-- Estimated morphemes
-Designed for Indigenous languages with complex morphology.
-
-OUTPUT DIRECTORY: datasets/vocab_analysis
-- token_frequencies.csv  top words / tokens
-- top_tokens.png  bar chart of token freq
-- char_ngrams.csv  most common character n-grams
-- top_char_ngrams.png  bar chart of n-gram freq
-- estimated_morphemes.csv  long complex token candidates
-
-POLYSYNTHETIC CONSIDERATIONS
-- this script uses basic heuristics ideal for early exploratory analysis
-- can swap in your custom tokenizer (SentencePiece, Unigram or BPE)
-- extend morpheme logic by including language-specific suffix / prefix lists
-"""
+# ============================================================================
+#
+# vocab_builder.py
+#  Load a text corpus (sample_corups.txt)
+#  tokenize it using whiespace or custom tokenizer
+#  count and visualize: 
+#  word / token frequency
+#  character n-grams (roots, affixes, suffixes)
+#  estimated morphemes using simple rules
+#  Save Output to:
+#  .csv files for further analysis
+#  .png plots for fast visualization
+# Analyze a polysynthetic language corpus to extract and visualize:
+#  Token frequencies
+#  Character n-grams
+#  Estimated morphemes
+# Designed for Indigenous languages with complex morphology.
+# 
+# OUTPUT DIRECTORY: datasets/vocab_analysis
+# - token_frequencies.csv  top words / tokens
+# - top_tokens.png  bar chart of token freq
+# - char_ngrams.csv  most common character n-grams
+# - top_char_ngrams.png  bar chart of n-gram freq
+# - estimated_morphemes.csv  long complex token candidates
+# 
+# POLYSYNTHETIC CONSIDERATIONS
+# - this script uses basic heuristics ideal for early exploratory analysis
+# - can swap in your custom tokenizer (SentencePiece, Unigram or BPE)
+# - extend morpheme logic by including language-specific suffix / prefix lists """
+#
+# Author: 
+#   MoniGarr (Monica Peters), monigarr@MoniGarr.com
+#
+# This repository supports language revival & retention for
+#     Polysynthetic, Low-Resource Indigenous Languages that
+#       might lack industry standard language ISO codes.
+#
+# License: Apache 2.0
+# 
+# For technical consulting, collaboration, or mentorship on Indigenous
+# Language Revival & Retention Tech Solutions (AI, XR, 3D, Cultural Protocols)
+# contact:
+#   MoniGarr (Monica Peters) – monigarr@monigarr.com
+#   Founder of MoniGarr.com LLC and MohawkLanguage.ca
+#   Akwesasne-based Onkwehonwe (Indigenous, Kanien’kéhake, Mohawk of Akwesasne)
+#   https://www.linkedin.com/in/3dtechartist
+#
+# ============================================================================
 
 import os
 import re

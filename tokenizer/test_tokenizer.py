@@ -1,8 +1,11 @@
 # ============================================================================
 #
-# kanienkeha_vocab_rules.yaml
-# configurable for Kanien’kéha specific morphological cues: prefixes, suffixes and roots.
-# 
+# test_tokenizer.py
+# RUN WITH: # python tokenizer/test_tokenizer.py
+# Load the trained tokenizer and segment a test sentence.
+# Useful for checking if known prefixes and roots are retained.
+# Use model_type=unigram for morphologically rich, low-resource languages.
+# This tokenizer is compatible with HuggingFace models (via PreTrainedTokenizerFast).
 # Author: 
 #   MoniGarr (Monica Peters), monigarr@MoniGarr.com
 #
@@ -22,41 +25,19 @@
 #
 # ============================================================================
 
+import sentencepiece as spm
 
-language: Kanien'kéha
-type: polysynthetic
-description: >
-  Common prefixes, suffixes, and root fragments for parsing Kanien'kéha tokens into morphemes.
+model_path = "kanienkeha_tokenizer.model"
+sp = spm.SentencePieceProcessor()
+sp.load(model_path)
 
-prefixes:
-  - "ka"
-  - "ra"
-  - "iako"
-  - "tsi"
-  - "io"
-  - "te"
+test_sentences = [
+    "Kenòn:we’s tsi ní:io?",
+    "Wari’kó:wa iontáhkwa ní:se.",
+    "Iakoia’takarénies tsi ní:ioht ne ó:nen."
+]
 
-suffixes:
-  - "ron"
-  - "kha"
-  - "ne"
-  - "tshera"
-  - "shon"
-  - "kwa"
-
-infix_patterns:
-  - "n[iie]n"
-  - "akw"
-  - "on[iy]"
-
-root_markers:
-  - "non"
-  - "we"
-  - "ka"
-  - "io"
-  - "tsi"
-
-notes:
-  - Prefixes often indicate person, object, or mode (e.g., "ra" for male agent)
-  - Suffixes may show tense, location, or plurality
-  - Roots can shift based on nasalization or vowel harmony
+for sentence in test_sentences:
+    pieces = sp.encode(sentence, out_type=str)
+    print(f"\n📘 Original: {sentence}")
+    print(f"🧩 Segmented: {' | '.join(pieces)}")

@@ -1,7 +1,9 @@
 # ============================================================================
 #
-# kanienkeha_vocab_rules.yaml
-# configurable for Kanien’kéha specific morphological cues: prefixes, suffixes and roots.
+# scripts/config_loader.py
+#
+# loads and validates training configs before launch 
+#
 # 
 # Author: 
 #   MoniGarr (Monica Peters), monigarr@MoniGarr.com
@@ -22,41 +24,28 @@
 #
 # ============================================================================
 
+import yaml
+import jsonschema
+from pathlib import Path
 
-language: Kanien'kéha
-type: polysynthetic
-description: >
-  Common prefixes, suffixes, and root fragments for parsing Kanien'kéha tokens into morphemes.
+CONFIG_PATH = Path("../config/training_config.yaml")
+SCHEMA_PATH = Path("../config/training_config_schema.yaml")
 
-prefixes:
-  - "ka"
-  - "ra"
-  - "iako"
-  - "tsi"
-  - "io"
-  - "te"
+def load_yaml(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f)
 
-suffixes:
-  - "ron"
-  - "kha"
-  - "ne"
-  - "tshera"
-  - "shon"
-  - "kwa"
+def validate_training_config():
+    config = load_yaml(CONFIG_PATH)
+    schema = load_yaml(SCHEMA_PATH)
 
-infix_patterns:
-  - "n[iie]n"
-  - "akw"
-  - "on[iy]"
+    try:
+        jsonschema.validate(instance=config, schema=schema)
+        print("✅ training_config.yaml is valid.")
+        return config
+    except jsonschema.ValidationError as e:
+        print(f"❌ Validation Error: {e.message}")
+        raise
 
-root_markers:
-  - "non"
-  - "we"
-  - "ka"
-  - "io"
-  - "tsi"
-
-notes:
-  - Prefixes often indicate person, object, or mode (e.g., "ra" for male agent)
-  - Suffixes may show tense, location, or plurality
-  - Roots can shift based on nasalization or vowel harmony
+if __name__ == "__main__":
+    validate_training_config()

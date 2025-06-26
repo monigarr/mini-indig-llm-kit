@@ -1,0 +1,4 @@
+id,dialect,input,expected_tokens
+t001,Eastern,Kenòn:we’s ne onénhste.,"ke-,nòn:,we,’s,ne,onénhste,."
+t002,Central,Wa’kè:ron tsi ní:ioht.,"wa’,kè:,ron,tsi,ní:ioht,."
+t003,Western,Iah teionkwate’nikonhrèn:ton.,"iah,te-,ionkwa,te’ni,konhrèn,ton,."

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "001",
+    "dialect": "Eastern",
+    "speaker_id": "elder_full_name",
+    "speaker_role": "fluent",
+    "source": "community_lesson",
+    "input_text": "Kenòn:we’s",
+    "translation": "I like it.",
+    "morpheme_gloss": ["ke-", "nòn:we", "-’s"],
+    "morpheme_tags": ["1SG", "like", "habitual"],
+    "stem_type": "C-STEM",
+    "category": "blue", 
+    "notes": "Used in daily conversation. Confirmed by fluent speaker.",
+    "usage_context": "everyday expression",
+    "validation_status": "verified",
+    "tokenized": true
+  },
+  {
+    "id": "002",
+    "dialect": "Central",
+    "speaker_id": "speaker_full_name",
+    "speaker_role": "semi-fluent",
+    "source": "family_story",
+    "input_text": "Wakenòn:we’",
+    "translation": "I liked it.",
+    "morpheme_gloss": ["wa-", "ke-", "nòn:we", "-’"],
+    "morpheme_tags": ["PAST", "1SG", "like", "PUNC"],
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "notes": "Used in narrative storytelling.",
+    "usage_context": "past tense storytelling",
+    "validation_status": "pending_review",
+    "tokenized": false
+  },
+  {
+    "id": "003",
+    "dialect": "Western",
+    "speaker_id": "youth02",
+    "speaker_role": "learner",
+    "source": "school_project",
+    "input_text": "Ronòn:we’s",
+    "translation": "He likes it.",
+    "morpheme_gloss": ["ro-", "nòn:we", "-’s"],
+    "morpheme_tags": ["3SG.M", "like", "habitual"],
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "notes": "Needs elder validation.",
+    "usage_context": "basic sentence practice",
+    "validation_status": "needs_validation",
+    "tokenized": false
+  }
+]

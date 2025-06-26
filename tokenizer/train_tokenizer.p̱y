@@ -1,0 +1,57 @@
+# ============================================================================
+#
+# train_tokenizer.py
+#
+# Trains a byte-level BPE tokenizer with morpheme awareness for Kanien'kéha using
+# the vocab rules in ../datasets/kanienkeha_vocab_rules.yaml and training data in sample_corpus.txt.
+# Author: 
+#   MoniGarr (Monica Peters), monigarr@MoniGarr.com
+#
+# This repository supports language revival & retention for
+#     Polysynthetic, Low-Resource Indigenous Languages that
+#       might lack industry standard language ISO codes.
+#
+# License: Apache 2.0
+# 
+# For technical consulting, collaboration, or mentorship on Indigenous
+# Language Revival & Retention Tech Solutions (AI, XR, 3D, Cultural Protocols)
+# contact:
+#   MoniGarr (Monica Peters) – monigarr@monigarr.com
+#   Founder of MoniGarr.com LLC and MohawkLanguage.ca
+#   Akwesasne-based Onkwehonwe (Indigenous, Kanien’kéhake, Mohawk of Akwesasne)
+#   https://www.linkedin.com/in/3dtechartist
+#
+# ============================================================================
+
+
+import os
+from tokenizers import Tokenizer, models, pre_tokenizers, decoders, trainers, normalizers
+from tokenizers.normalizers import Lowercase, NFD, StripAccents, Sequence
+from tokenizers.pre_tokenizers import Whitespace
+from tokenizers.trainers import BpeTrainer
+
+CORPUS_PATH = "../datasets/sample_corpus.txt"
+VOCAB_SIZE = 32000
+TOKENIZER_SAVE_PATH = "custom_tokenizer.json"
+
+def train_tokenizer():
+    print("🧠 Training new tokenizer...")
+
+    tokenizer = Tokenizer(models.BPE())
+    tokenizer.normalizer = Sequence([NFD(), Lowercase(), StripAccents()])
+    tokenizer.pre_tokenizer = pre_tokenizers.Whitespace()
+
+    trainer = BpeTrainer(
+        vocab_size=VOCAB_SIZE,
+        special_tokens=["<unk>", "<pad>", "<s>", "</s>", "<mask>",
+                        "<speaker_A>", "<speaker_B>",
+                        "<dialect_Eastern>", "<dialect_Central>", "<dialect_Western>", "<dialect_EnglishPhonetic>"]
+    )
+
+    tokenizer.train([CORPUS_PATH], trainer)
+    tokenizer.save(TOKENIZER_SAVE_PATH)
+
+    print(f"✅ Tokenizer saved to {TOKENIZER_SAVE_PATH}")
+
+if __name__ == "__main__":
+    train_tokenizer()

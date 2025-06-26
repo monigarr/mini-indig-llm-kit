@@ -1,0 +1,113 @@
+Kenòn:we’s  
+# I like it.
+
+Senòn:we’s  
+# You like it.
+
+Ranòn:we’s
+# He likes it
+
+Ienòn:we’s
+# She likes it.
+
+Kanòn:we’s
+# It likes it.
+
+Ionòn:we’s
+# It likes it.
+
+Teninòn:we’s
+# You & I like it.
+
+Iakeninòn:we’s
+# Someone else & I like it.
+
+Seninòn:we’s
+# You two like it.
+
+Ninòn:we’s
+# Two guys like it.
+
+Keninòn:we’s
+# Two girls like it.
+
+Tewanòn:we’s
+# All of us like it.
+
+Ratinòn:we’s
+# They (guys) like it.
+
+Kontinòn:we’s
+# They (girls) like it.
+
+Wakenòn:we’s
+# It likes me.
+
+Sanòn:we’s
+# It likes you.
+
+Ronòn:we’s
+# It likes him.
+
+Iakonòn:we’s
+# It likes her.
+
+Ionkeninòn:we’s
+# It likes two of us.
+
+Seninòn:we’s
+# It likes you two.
+
+Ionkwanòn:we’s
+# It likes us.
+
+Rotinòn:we’s
+# It likes them (males).
+
+Iotinòn:we’s
+# It likes them (females).
+
+Konnòn:we’s
+# I like you.
+
+Rinòn:we’s
+# I like him.
+
+Khenòn:we’s
+# I like her.
+
+Takenòn:we’s
+# You like me.
+
+Etshenòn:we’s
+# You like him.
+
+Shenòn:we’s
+# You like her.
+
+Rakenòn:we’s
+# He likes me.
+
+Ianòn:we’s
+# He likes you.
+
+Ronòn:we’s
+# He likes him.
+
+Ronòn:we’s
+# It likes him.
+
+Shakonòn:we’s
+# He likes her.
+
+Ionkenòn:we’s
+# She likes me.
+
+Iesanòn:we’s
+# She likes you.
+
+Ronwanòn:we’s
+# She likes him.
+
+Iontatenòn:we’s
+# She likes her.

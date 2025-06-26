@@ -1,0 +1,20 @@
+[
+  {
+    "id": "t001",
+    "dialect": "Eastern",
+    "input": "Kenòn:we’s ne onénhste.",
+    "expected_tokens": ["ke-", "nòn:", "we", "’s", "ne", "onénhste", "."]
+  },
+  {
+    "id": "t002",
+    "dialect": "Central",
+    "input": "Wa’kè:ron tsi ní:ioht.",
+    "expected_tokens": ["wa’", "kè:", "ron", "tsi", "ní:ioht", "."]
+  },
+  {
+    "id": "t003",
+    "dialect": "Western",
+    "input": "Iah teionkwate’nikonhrèn:ton.",
+    "expected_tokens": ["iah", "te-", "ionkwa", "te’ni", "konhrèn", "ton", "."]
+  }
+]

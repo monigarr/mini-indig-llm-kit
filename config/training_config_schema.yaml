@@ -1,0 +1,133 @@
+# ============================================================================
+#
+# ../mini-indig-llm-kit/config/training_config_schema.yaml
+#
+# validates our training_config.yaml is structured correctly
+# 
+# Author: 
+#   MoniGarr (Monica Peters), monigarr@MoniGarr.com
+#
+# This repository supports language revival & retention for
+#     Polysynthetic, Low-Resource Indigenous Languages that
+#       might lack industry standard language ISO codes.
+#
+# License: Apache 2.0
+# 
+# For technical consulting, collaboration, or mentorship on Indigenous
+# Language Revival & Retention Tech Solutions (AI, XR, 3D, Cultural Protocols)
+# contact:
+#   MoniGarr (Monica Peters) – monigarr@monigarr.com
+#   Founder of MoniGarr.com LLC and MohawkLanguage.ca
+#   Akwesasne-based Onkwehonwe (Indigenous, Kanien’kéhake, Mohawk of Akwesasne)
+#   https://www.linkedin.com/in/3dtechartist
+#
+# ============================================================================
+
+$schema: "http://json-schema.org/draft-07/schema#"
+title: "Training Config Schema for Mini-Indig-LLM-Kit"
+type: object
+required:
+  - project_name
+  - language
+  - dialect
+  - version
+  - base_model
+  - dataset
+  - training
+  - output
+  - offline
+  - ethics
+
+properties:
+  project_name: { type: string }
+  language: { type: string }
+  dialect: { type: string }
+  version: { type: string }
+
+  run_id: { type: string }
+
+  base_model:
+    type: object
+    required: [name, tokenizer_path]
+    properties:
+      name: { type: string }
+      revision: { type: string }
+      quantization: { type: string }
+      architecture: { type: string }
+      tokenizer_path: { type: string }
+
+  trainer: { type: string }
+  precision: { type: string }
+  use_flash_attention: { type: boolean }
+  gradient_checkpointing: { type: boolean }
+
+  dataset:
+    type: object
+    required: [name, path, format, text_field]
+    properties:
+      name: { type: string }
+      path: { type: string }
+      metadata: { type: string }
+      format: { type: string }
+      text_field: { type: string }
+      max_seq_length: { type: integer }
+      shuffle: { type: boolean }
+      num_workers: { type: integer }
+      tokenization_rules: { type: string }
+
+  training:
+    type: object
+    required: [epochs, batch_size, learning_rate]
+    properties:
+      epochs: { type: integer }
+      batch_size: { type: integer }
+      gradient_accumulation_steps: { type: integer }
+      learning_rate: { type: number }
+      weight_decay: { type: number }
+      warmup_steps: { type: integer }
+      logging_steps: { type: integer }
+      save_steps: { type: integer }
+      eval_steps: { type: integer }
+      seed: { type: integer }
+
+  output:
+    type: object
+    required: [output_dir]
+    properties:
+      output_dir: { type: string }
+      model_card: { type: string }
+      save_total_limit: { type: integer }
+      save_strategy: { type: string }
+      eval_strategy: { type: string }
+
+  offline:
+    type: object
+    properties:
+      tokenizer_cache: { type: string }
+      model_cache: { type: string }
+      allow_offline_mode: { type: boolean }
+
+  evaluation:
+    type: object
+    properties:
+      enabled: { type: boolean }
+      notebook: { type: string }
+      metrics:
+        type: array
+        items: { type: string }
+
+  ethics:
+    type: object
+    required: [worksheet_path, respect_data_sovereignty, require_contributor_consent]
+    properties:
+      worksheet_path: { type: string }
+      respect_data_sovereignty: { type: boolean }
+      require_contributor_consent: { type: boolean }
+      dialect_guidelines_path: { type: string }
+
+  collaboration:
+    type: object
+    properties:
+      contributors_file: { type: string }
+      editable_notes: { type: string }
+      session_tracking: { type: string }

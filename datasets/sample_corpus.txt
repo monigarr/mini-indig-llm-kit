@@ -1,0 +1,17 @@
+Kenòn:we’s  
+# I like it.
+
+Senòn:we’s  
+# You like it.
+
+Ranòn:we’s
+# He likes it
+
+Ienòn:we’s
+# She likes it.
+
+Kanòn:we’s
+# It likes it.
+
+Ionòn:we’s
+# It likes it.

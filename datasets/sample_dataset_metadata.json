@@ -1,0 +1,33 @@
+{
+  "language": "Kanien’kéha",
+  "dialect": "Eastern",
+  "version": "2025.06.25",
+  "description": "Pronoun prefix conjugation mappings and morpheme structures for the Eastern dialect of Kanien’kéha.",
+  "source": "Kanien’kéha data gathering with fluent speakers in Akwesasne.",
+  "license": "custom-community-license",
+  "formats": ["text", "audio", "transcription", "tokenized"],
+  "features": ["morpheme-level", "pronoun-prefixes", "tokenized", "whisper-transcribed"],
+  "ethical_guidelines": {
+    "community_involvement": "Reviewed and approved by a panel of Kanien’kéhae technicians, speakers, elders and educators in Akwesasne.",
+    "data_sovereignty": "All language data remains the intellectual and cultural property of the Akwesasne Kanien’kehà:ka.",
+    "cultural_safety": "This dataset may not be redistributed without express Community permission, no individuals are able to provide express permission on behalf of the entire Community."
+  },
+  "contributors": [
+    {
+      "name": "MoniGarr",
+      "role": "founder",
+      "affiliation": "Akwesasne | MoniGarr.com LLC | MohawkLanguage.ca",
+      "contact": "monigarr@monigarr.com"
+    },
+    {
+      "name": "Walter Peters",
+      "role": "founder",
+      "affiliation": "Akwesasne | MoniGarr.com LLC | MohawkLanguage.ca",
+      "contact": "IBallDryWall@Yahoo.ca"
+    }
+  ],
+  "dependencies": [
+    "kanienkeha_vocab_rules.yaml",
+    "custom_tokenizer.json"
+  ]
+}
