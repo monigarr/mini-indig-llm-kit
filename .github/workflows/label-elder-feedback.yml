@@ -1,0 +1,21 @@
+name: 🏷️ Label Elder Feedback
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  label_issues:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔍 Check if title is an annotation
+        if: startsWith(github.event.issue.title, 'Annotation for Test')
+        run: echo "Elder annotation detected"
+
+      - name: 🏷️ Add elder-feedback label
+        if: startsWith(github.event.issue.title, 'Annotation for Test')
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          labels: elder-feedback

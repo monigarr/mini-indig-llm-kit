@@ -1,0 +1,62 @@
+name: Build and Deploy Tokenizer Reports
+
+on:
+  push:
+    paths:
+      - 'tokenizer/custom_tokenizer.json'
+      - 'tokenizer/tests/tokenizer_test_set.csv'
+      - 'tokenizer_segmentation_scores.ipynb'
+  workflow_dispatch:
+
+jobs:
+  run-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+
+      - name: 📦 Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install jupyter nbconvert pandas openpyxl transformers scikit-learn
+
+      - name: 🧠 Run tokenizer notebook
+        run: |
+          jupyter nbconvert --to notebook --inplace --execute tokenizer/tokenizer_segmentation_scores.ipynb
+
+      - name: 📁 Move reports to /reports/
+        run: |
+          mkdir -p reports
+          mv tokenizer/tests/segmentation_results.html reports/index.html
+          mv tokenizer/tests/segmentation_results.ods reports/segmentation_results.ods
+          mv tokenizer/tests/segmentation_results.csv reports/segmentation_results.csv
+
+      - name: 📤 Commit report artifacts
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add reports/
+          git commit -m "🔁 Auto-update tokenizer reports"
+          git push
+        continue-on-error: true
+
+  deploy-pages:
+    needs: run-report
+    runs-on: ubuntu-latest
+    if: success()
+
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 🌐 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./reports
