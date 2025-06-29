@@ -3,26 +3,39 @@
 **Project Name**: `mini-indig-llm-kit`  
 **Language Focus**: _________________________  
 **Community or Territory**: ___________________
+**Dataset Name: Language_Dialect_SpeakerOriginalSource **: ___________________
 
 ---
 
 ## 👥 Team Members
 
-| Name | Role | Technical / Non-Technical | Fluent Speaker | Notes |
-|------|------|----------------------------|----------------|-------|
-|      |      |                            |                |       |
-|      |      |                            |                |       |
+| Name | Role            | Tech / Non-Tech            | Fluency | Notes        |
+|------|-----------------|----------------------------|---------|--------------|
+|      |                 |                            |         |              |
+|      |                 |                            |         |              |
+|      |                 |                            |         |              |
+|      |                 |                            |         |              |
+|      |                 |                            |         |              |
+|      |                 |                            |         |              |
+|      |                 |                            |         |              |
+|      |                 |                            |         |              |
+|      |                 |                            |         |              |
 
 ---
 
 ## 🎯 Project Goals (Check all that apply)
 
-- [ ] Language translation
-- [ ] Storytelling revival
-- [ ] Lexicon / dictionary creation
-- [ ] Youth education
-- [ ] Cultural documentation
-- [ ] Ethical AI protocol development
+- [ ] Language Translation
+- ̱[ ] Language Revival
+- ̱[ ] Language Retention
+- ̱[ ] Language Memorization
+- ̱[ ] Language Learning
+- ̱[ ] Language Teaching
+- [ ] Storytelling
+- [ ] Lexicon / Dictionary Creation
+- [ ] Youth Education
+- [ ] Cultural Documentation
+- [ ] Ethical AI Protocol Development
 - [ ] Other: _______________________________________
 
 ---

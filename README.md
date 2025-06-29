@@ -6,7 +6,7 @@
 
 ## 🧠 What is This?
 
-This toolkit helps Onkwehonwe communities, researchers, and technologists fine-tune open-source LLMs like LLaMA 3 (8B) using QLoRA for their own languages—especially those without ISO codes, dictionaries, or digital resources.
+This toolkit helps Onkwehonwe communities, researchers, and technologists fine-tune open-source LLMs like LLaMA 3 (8B) using QLoRA for their own languages—especially those without an ISO code for each dialect, dictionaries, or digital resources that are not currently supported by standardized communication protocols and platforms.
 
 All tools are optimized to run **offline**, with clear instructions, low-resource compatibility, and collaborative cultural protocols.
 
