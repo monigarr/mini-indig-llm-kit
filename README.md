@@ -62,5 +62,13 @@ segmentation_results.ods	✅ for download	                  ❌ (no preview)
 segmentation_results.csv	✅ for download	                  ❌
 
 
+### About MoniGarr.com & MohawkLanguage.ca
+MoniGarr.com and MohawkLanguage.ca are based in the Akwesasne Mohawk Indian Reservation (NY USA, Ontario & Quebec Canada). Walter Peters and Monica Peters are the founders.  Monica produced Onkwehonwehneha AI (Ancient Intelligence collaborating with Artificial Intelligence) in the 1990s and that work went on to be recognized with tech competition awards, industry awards and televised recognition as the world’s first Kanien’kéha Chatbots / Indigenous Language Chatbots / Polysynthetic Language dialect chatbots in the early 2000s. 
+
+* (MohawkLanguage.ca): [https://www.mohawklanguage.ca]
+* (Medium): [https://medium.com/@aiarts]
+* (YouTube): [https://www.youtube.com/@mohawklanguage]
+* (MoniGarr LinkedIn): [https://www.linkedin.com/in/3dtechartist]
+* (MoniGarr.com): [https://www.MoniGarr.com]
 
 
