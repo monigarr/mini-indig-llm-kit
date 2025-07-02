@@ -1,62 +1,163 @@
 # ============================================================================
-#
 # kanienkeha_vocab_rules.yaml
-# configurable for Kanien’kéha specific morphological cues: prefixes, suffixes and roots.
-# 
-# Author: 
-#   MoniGarr (Monica Peters), monigarr@MoniGarr.com
+# Configuration for Kanien’kéha (Mohawk Language - Akwesasne Dialect)
+# Morphological cues for tokenizer construction: prefixes, suffixes, infixes, root forms
+#
+# Author:
+#   MoniGarr (Monica Peters) | monigarr@monigarr.com
+#   Founder: MoniGarr.com LLC | MohawkLanguage.ca
+#   Creator of the first Kanien’kéha chatbots (Onkwehonwehneha AI)
 #
 # This repository supports language revival & retention for
-#     Polysynthetic, Low-Resource Indigenous Languages that
-#       might lack industry standard language ISO codes.
-#
+# Polysynthetic, Low-Resource Indigenous Languages lacking ISO codes.
 # License: Apache 2.0
-# 
-# For technical consulting, collaboration, or mentorship on Indigenous
-# Language Revival & Retention Tech Solutions (AI, XR, 3D, Cultural Protocols)
-# contact:
-#   MoniGarr (Monica Peters) – monigarr@monigarr.com
-#   Founder of MoniGarr.com LLC and MohawkLanguage.ca
-#   Akwesasne-based Onkwehonwe (Indigenous, Kanien’kéhake, Mohawk of Akwesasne)
-#   https://www.linkedin.com/in/3dtechartist
-#
 # ============================================================================
 
-
-language: Kanien'kéha
+contact: monigarr@monigarr.com
+language: Kanien’kéha
+dialect: Akwesasne
+iso_status: unofficial
 type: polysynthetic
 description: >
-  Common prefixes, suffixes, and root fragments for parsing Kanien'kéha tokens into morphemes.
+  Vocabulary mapping rules for Kanien’kéha Akwesasne Dialect with a focus on C/A/I/E/O-Stem prefixes,
+  used with verbs like "nòn:we’s" (to like). Supports morphosyntactic parsing and tokenizer training
+  for language revival and retention applications.
+
+root_verb: "nòn:we’s"
+
+english_pronoun_sets:
+  - "I"
+  - "you"
+  - "he"
+  - "she"
+  - "it"
+  - "you and I"
+  - "someone and I"
+  - "you two"
+  - "two males"
+  - "two females"
+  - "you all and I"
+  - "they and I"
+  - "all of you"
+  - "they (males)"
+  - "they (females)"
 
 prefixes:
-  - "ka"
-  - "ra"
-  - "iako"
-  - "tsi"
-  - "io"
-  - "te"
+  CStem:
+    I: ["ke", "ik", "wake"]
+    you: ["hse", "sa"]
+    he: ["ra", "ro"]
+    she: ["ie", "iako"]
+    it: ["ka", "io"]
+    you_and_I: ["teni", "ionkeni"]
+    someone_and_I: ["iakeni", "ionkeni"]
+    you_two: ["seni"]
+    two_males: ["hni", "roti"]
+    two_females: ["keni", "ioti"]
+    they_males: ["rati", "roti"]
+    they_females: ["konti", "ioti"]
+    you_all_and_I: ["tewa", "ionkwa"]
+    they_and_I: ["iakwa", "ionkwa"]
+    all_of_you: ["sewa"]
+
+  AStem:
+    I: ["k", "wak"]
+    you: ["hs", "sa"]
+    he: ["r", "ro"]
+    she: ["ion", "iako"]
+    it: ["w", "io"]
+    you_and_I: ["ti", "ionki"]
+    someone_and_I: ["iaki", "ionki"]
+    you_two: ["tsi", "seni"]
+    two_males: ["hi", "ron"]
+    two_females: ["ki", "kon"]
+    you_all_and_I: ["tew", "ionkw"]
+    they_and_I: ["iakw", "ionkw"]
+    all_of_you: ["sew"]
+    they_males: ["ron"]
+    they_females: ["kon", "ion"]
+
+  IStem:
+    I: ["k", "wak"]
+    you: ["ts", "hs", "sen"]
+    he: ["ren", "ro"]
+    she: ["ie", "iako"]
+    it: ["ken", "io"]
+    you_and_I: ["ten", "ionken"]
+    someone_and_I: ["iaken", "ionken"]
+    you_two: ["sen"]
+    two_males: ["hn", "rot"]
+    two_females: ["ken", "iot"]
+    you_all_and_I: ["tewen", "ionkwen"]
+    they_and_I: ["iakwen", "ionkwen"]
+    all_of_you: ["sewen"]
+    they_males: ["rat", "ronn", "rot"]
+    they_females: ["kont", "konn", "iot"]
+
+  E_EnStem:
+    I: ["k", "wak"]
+    you: ["hs", "sen"]
+    he: ["hr", "raw"]
+    she: ["iak", "iakaw"]
+    it: ["w", "iaw"]
+    you_and_I: ["ten", "ionken"]
+    someone_and_I: ["iaken", "ionken"]
+    you_two: ["sen"]
+    two_males: ["hn", "ron"]
+    two_females: ["ken", "ion"]
+    you_all_and_I: ["tew", "ionkw"]
+    they_and_I: ["iakw", "ionkw"]
+    all_of_you: ["sew"]
+    they_males: ["ronn", "ron"]
+    they_females: ["konn", "ion"]
+
+  O_OnStem:
+    I: ["k", "wak"]
+    you: ["hs", "sen"]
+    he: ["hr", "ra"]
+    she: ["iak", "iaka"]
+    it: ["i", "ia"]
+    you_and_I: ["ten", "ionken"]
+    someone_and_I: ["iaken", "ionken"]
+    you_two: ["sen"]
+    two_males: ["hn", "ron"]
+    two_females: ["ken", "ion"]
+    you_all_and_I: ["ti", "ionki"]
+    they_and_I: ["iaki", "ionki"]
+    all_of_you: ["tsy"]
+    they_males: ["ronn", "ron"]
+    they_females: ["konn", "ion"]
 
 suffixes:
   - "ron"
   - "kha"
   - "ne"
-  - "tshera"
-  - "shon"
-  - "kwa"
 
 infix_patterns:
-  - "n[iie]n"
   - "akw"
-  - "on[iy]"
 
 root_markers:
-  - "non"
-  - "we"
-  - "ka"
-  - "io"
-  - "tsi"
+  - "nòn:we’s"
+
+pronunciation_exceptions:
+  - rule: "The 'h' is pronounced only when preceded by a prefix."
+    example_good: "senòn:we’s"
+    example_with_negation: "iah tehsenòn:we’s"
+
+  - rule: "'ik' is prefixed to most roots beginning with 'k'; 'i' drops with pre-prefix attachment."
+    example_root: "ikhswens"
+    example_negated: "iah tékhswens"
+
+  - rule: "'ts' used with roots beginning in 'i'; 't' becomes 'h' with negation prefix."
+    example_good: "tsienté:ri"
+    example_with_negation: "iah tehsienté:ri"
+
+  - rule: "'it' used with roots beginning in 'hs'; 'i' drops with negation."
+    example_good: "íthswens"
+    example_with_negation: "iah téthswens"
 
 notes:
-  - Prefixes often indicate person, object, or mode (e.g., "ra" for male agent)
-  - Suffixes may show tense, location, or plurality
-  - Roots can shift based on nasalization or vowel harmony
+  - This file is dialect-specific: Kanien’kéha (Akwesasne)
+  - Add additional roots and dialect-specific variations in `root_markers`
+  - Ideal for use in tokenizer, segmenter, or morpheme classification tasks
+  - This configuration is editable for use in YAML→tokenizer conversion workflows
