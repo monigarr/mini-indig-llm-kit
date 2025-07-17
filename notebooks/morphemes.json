@@ -1,0 +1,122 @@
+[
+  {
+    "source_id": "001",
+    "surface_form": "ke-",
+    "token_index": 0,
+    "input_text": "Kenòn:we’s",
+    "translation": "I like it.",
+    "tag": "1SG",
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "usage_context": "everyday expression",
+    "validation_status": "verified"
+  },
+  {
+    "source_id": "001",
+    "surface_form": "nòn:we",
+    "token_index": 1,
+    "input_text": "Kenòn:we’s",
+    "translation": "I like it.",
+    "tag": "like",
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "usage_context": "everyday expression",
+    "validation_status": "verified"
+  },
+  {
+    "source_id": "001",
+    "surface_form": "-’s",
+    "token_index": 2,
+    "input_text": "Kenòn:we’s",
+    "translation": "I like it.",
+    "tag": "habitual",
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "usage_context": "everyday expression",
+    "validation_status": "verified"
+  },
+  {
+    "source_id": "002",
+    "surface_form": "wa-",
+    "token_index": 0,
+    "input_text": "Wakenòn:we’",
+    "translation": "I liked it.",
+    "tag": "PAST",
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "usage_context": "past tense storytelling",
+    "validation_status": "pending_review"
+  },
+  {
+    "source_id": "002",
+    "surface_form": "ke-",
+    "token_index": 1,
+    "input_text": "Wakenòn:we’",
+    "translation": "I liked it.",
+    "tag": "1SG",
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "usage_context": "past tense storytelling",
+    "validation_status": "pending_review"
+  },
+  {
+    "source_id": "002",
+    "surface_form": "nòn:we",
+    "token_index": 2,
+    "input_text": "Wakenòn:we’",
+    "translation": "I liked it.",
+    "tag": "like",
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "usage_context": "past tense storytelling",
+    "validation_status": "pending_review"
+  },
+  {
+    "source_id": "002",
+    "surface_form": "-’",
+    "token_index": 3,
+    "input_text": "Wakenòn:we’",
+    "translation": "I liked it.",
+    "tag": "PUNC",
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "usage_context": "past tense storytelling",
+    "validation_status": "pending_review"
+  },
+  {
+    "source_id": "003",
+    "surface_form": "ro-",
+    "token_index": 0,
+    "input_text": "Ronòn:we’s",
+    "translation": "He likes it.",
+    "tag": "3SG.M",
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "usage_context": "basic sentence practice",
+    "validation_status": "needs_validation"
+  },
+  {
+    "source_id": "003",
+    "surface_form": "nòn:we",
+    "token_index": 1,
+    "input_text": "Ronòn:we’s",
+    "translation": "He likes it.",
+    "tag": "like",
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "usage_context": "basic sentence practice",
+    "validation_status": "needs_validation"
+  },
+  {
+    "source_id": "003",
+    "surface_form": "-’s",
+    "token_index": 2,
+    "input_text": "Ronòn:we’s",
+    "translation": "He likes it.",
+    "tag": "habitual",
+    "stem_type": "C-STEM",
+    "category": "blue",
+    "usage_context": "basic sentence practice",
+    "validation_status": "needs_validation"
+  }
+]

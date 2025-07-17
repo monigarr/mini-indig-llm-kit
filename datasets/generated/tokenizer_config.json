@@ -1,0 +1,13 @@
+{
+  "lang": "kanienkeha",
+  "name": "kanienkeha-akwesasne-tokenizer",
+  "tokenizer_class": "PreTrainedTokenizerFast",
+  "do_lower_case": false,
+  "model_max_length": 128,
+  "bos_token": "<s>",
+  "eos_token": "</s>",
+  "unk_token": "<unk>",
+  "pad_token": "<pad>",
+  "sep_token": "<sep>",
+  "cls_token": "<cls>"
+}
