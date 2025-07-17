@@ -1,5 +1,42 @@
-# kanienkeha_conjugator.py
+# kanienkeha_conjugator_cstem.py
+#   Akwesasne Dialect
 # Script to auto-generate rich morphemes for the verb root "nòn:we’s" ("to like") using subject-object logic
+# nòn:we’s is a C Stem Kanien’kéha Phrase with non-literal English explanation ’to like’
+# Generate Kanien’kéha C Stem Conjugations.
+#
+# Author: 
+#   MoniGarr (Monica Peters), monigarr@MoniGarr.com
+#
+# This repository supports language revival & retention for
+#     Polysynthetic, Low-Resource Indigenous Languages that
+#       might lack industry standard language ISO codes.
+#
+# License: Apache 2.0
+# 
+# For technical consulting, collaboration, or mentorship on Indigenous
+# Language Revival & Retention Tech Solutions (AI, XR, 3D, Cultural Protocols)
+# contact:
+#   MoniGarr (Monica Peters) – monigarr@monigarr.com
+#   Founder of MoniGarr.com LLC and MohawkLanguage.ca
+#   Akwesasne-based Onkwehonwe (Indigenous, Kanien’kéhake, Mohawk of Akwesasne)
+#   https://www.linkedin.com/in/3dtechartist
+#
+# ============================================================================
+# This script is scaffolded to:
+# Generate extended conjugations of nòn:we’s
+# Map subject→object pairs with gloss tags
+# Output a structured morphemes.json file
+# Automatically produce >9 conjugations (15+ entries now, easily expandable)
+# 
+# TODO:
+# Expand Pair Matrix: Add more subject-object pairs (plural forms, inclusive/exclusive, gender distinctions).
+# Validate with Verified Community Connected Accepted Fluent Speakers: 
+#     Auto-gen entries marked "validation_status": "needs_validation" — ideal for feedback rounds.
+# Integrate into Pipeline:
+#   Append these to your tokenizer training corpus.
+#   Visualize gloss alignment (e.g., in a notebook or web interface).
+#   Use this dataset to pretrain a morpheme-aware LM head for Akwesasne dialect.
+
 
 import json
 import yaml
