@@ -30,6 +30,9 @@ All tools are optimized to run **offline**, with clear instructions, low-resourc
    git clone https://github.com/YOUR_USERNAME/mini-indig-llm-kit.git
    cd mini-indig-llm-kit
 
+2. ** Support from this Repo’s Creator**
+Schedule time for online mentor, tech training sessions to get you through your specific questions, development environment, etc. https://www.superprof.com/technical-artist-teaching-adobe-substance-python-stable-diffusion-for-all-levels.html
+
 ### GitHub Actions
 
 ## build_tokenizer_reports.yml
