@@ -1,5 +1,23 @@
 # kanienkeha_conjugator.py
 # Script to auto-generate rich morphemes for the verb root "nòn:we’s" ("to like") using subject-object logic
+# Author: 
+#   MoniGarr (Monica Peters), monigarr@MoniGarr.com
+#
+# This repository supports language revival & retention for
+#     Polysynthetic, Low-Resource Indigenous Languages that
+#       might lack industry standard language ISO codes.
+#
+# License: Apache 2.0
+# 
+# For technical consulting, collaboration, or mentorship on Indigenous
+# Language Revival & Retention Tech Solutions (AI, XR, 3D, Cultural Protocols)
+# contact:
+#   MoniGarr (Monica Peters) – monigarr@monigarr.com
+#   Founder of MoniGarr.com LLC and MohawkLanguage.ca
+#   Akwesasne-based Onkwehonwe (Indigenous, Kanien’kéhake, Mohawk of Akwesasne)
+#   https://www.linkedin.com/in/3dtechartist
+#
+# ============================================================================
 
 import json
 import yaml
