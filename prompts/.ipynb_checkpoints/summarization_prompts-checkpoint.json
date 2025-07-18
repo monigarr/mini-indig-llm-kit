@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sum_001",
+    "input": "Tsi ní:ioht ne wa’kè:ron. Wa’kè:ron ne onénhste tsi niwahsen ò:ia. Enkerihwaké:non tsi ní:ioht.",
+    "task": "summarize",
+    "target": "Wa’kè:ron ne onénhste. It is a well-made necklace."
+  },
+  {
+    "id": "sum_002",
+    "input": "Ionkwanonhwarí:io ken? Ó:nen kíken kahwatsirà:ken, ionkwanonhwarí:io tsi ní:ioht ne ratirihonnien’táhkhwa.",
+    "task": "summarize",
+    "target": "This car is good because it teaches us language."
+  },
+  {
+    "id": "sum_003",
+    "input": "Onkwehón:we tsi ní:ioht ne ionten’nikonhrèn:ton. Ó:nen onkwehón:we tsi ní:ioht, iah teionkwate’nikonhrèn:ton.",
+    "task": "summarize",
+    "target": "Indigenous knowledge needs to be respected and preserved."
+  }
+]

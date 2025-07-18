@@ -1,0 +1,27 @@
+[
+  {
+    "id": "conv_001",
+    "context": "Speaker A: Skennen’kó:wa ken?",
+    "response": "Speaker B: Skennen’kó:wa. Ní:wen."
+  },
+  {
+    "id": "conv_002",
+    "context": "Speaker A: Tóka ni’iótens?",
+    "response": "Speaker B: Í:se tsi ni’iótens, Onón:ta’kha."
+  },
+  {
+    "id": "conv_003",
+    "context": "Speaker A: Kenòn:we’s ne karíhwanoron?",
+    "response": "Speaker B: Hen, kenòn:we’s. Ó:nen ki wáhi."
+  },
+  {
+    "id": "conv_004",
+    "context": "Speaker A: Oh ní:yoht ne ó:nen?",
+    "response": "Speaker B: Ó:nen í:se iah tewakatonhnhá:ton."
+  },
+  {
+    "id": "conv_005",
+    "context": "Speaker A: Wa’kè:ron tsi ní:ioht?",
+    "response": "Speaker B: Hen, wa’kè:ron ne onénhste."
+  }
+]

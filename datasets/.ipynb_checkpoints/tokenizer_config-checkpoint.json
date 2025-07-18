@@ -1,0 +1,19 @@
+{
+  "model_type": "unigram",
+  "normalizer": {
+    "type": "NFKC"
+  },
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": null,
+  "special_tokens": [],
+  "unk_token": "[UNK]",
+  "bos_token": "[BOS]",
+  "eos_token": "[EOS]",
+  "pad_token": "[PAD]",
+  "clean_text": true,
+  "handle_chinese_chars": false,
+  "strip_accents": false,
+  "lowercase": false
+}
