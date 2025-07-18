@@ -24,9 +24,12 @@ Polysynthetic languages are those that form complex words by combining many morp
 
 ### 🔹 Iroquoian Family
 - **Mohawk**
-- **Seneca**
 - **Oneida**
+- **Onondaga**
+- **Cayuga**
+- **Seneca**
 - **Cherokee**
+- **Skarure**
 - **Tuscarora**
 
 ### 🔹 Muskogean Family *(moderately polysynthetic)*
