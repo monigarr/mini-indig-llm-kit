@@ -1,4 +1,4 @@
-# Polysynthetic Languages in North and South America
+# Polysynthetic Languages of the World
 
 This document lists known or widely recognized **polysynthetic languages** and language families from **North and South America**. Note that not every individual language within a family is strictly polysynthetic, but many exhibit strong polysynthetic traits.
 
