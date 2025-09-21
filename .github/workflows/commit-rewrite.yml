@@ -1,0 +1,21 @@
+# .github/workflows/commit-rewrite.yml
+name: Commit Message Rewrite
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  commit-msg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - run: pip install openai
+      - name: Rewrite Commit Message
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python .github/scripts/rewrite_commit.py
